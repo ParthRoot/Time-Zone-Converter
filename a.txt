@@ -1,0 +1,24 @@
+ <% if(msg.length> 0) { %>
+                    <% if (msg[4] != "null") { %>
+                        <div class="time" style="padding-top: 20px;">
+                            <div class="card">
+                                <div class="card-body">
+                                    <%- msg[4]%>
+                                </div>
+                            </div>
+                        </div>
+                        <%} else { %>
+                            <div class="time" style="padding-top: 20px;">
+                                <div class="card">
+                                    <div class="card-body">
+                                        1)
+                                        <%- msg[0]%> -
+                                            <%- msg[2]%> <br>2)
+                                                <%- msg[1]%> -
+                                                    <%- msg[3]%>
+                                    </div>
+                                </div>
+                            </div>
+                            <% } %>
+
+                                <%}%>
